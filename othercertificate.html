@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			border-radius: 10px;
+			position: relative;
+		}
+
+		h1 {
+			margin-top: 0;
+			font-size: 36px;
+			color: #333;
+			text-shadow: 1px 1px #fff;
+		}
+
+		p {
+			margin-bottom: 30px;
+			font-size: 18px;
+			color: #666;
+		}
+
+		.btn-container {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			z-index: 1;
+		}
+
+		.btn {
+			display: inline-block;
+			margin: 10px;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+			background-color: #4CAF50;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			transition: background-color 0.3s ease;
+			flex-basis: calc(33.33% - 20px);
+		}
+
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+
+		.btn-secondary {
+			background-color: #008CBA;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		.btn-secondary:hover {
+			background-color: #007AA3;
+		}
+
+		.background-shapes {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.background-shapes::before {
+			content: "";
+			position: absolute;
+			top: -50%;
+			left: -50%;
+			width: 200%;
+			height: 200%;
+			background-color: #4CAF50;
+			transform: rotate(45deg);
+			z-index: -1;
+		}
+
+		.background-shapes::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -50%;
+			width: 200%;
+			height: 50%;
+			background-color: #fff;
+			transform: skewY(-15deg);
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+	<div class="background-shapes"></div>
+	<div class="container">
+		<h1>Welcome to various technical<br> Certifications Section</h1>
+		<p>I passed HackerRank tests, earned a certificate, and improved my skills significantly.</p>
+		<div class="btn-container">
+			<a class="btn" href="https://drive.google.com/file/d/1NH9klhQ7VL8mEHVnpkSOfZ_8U8q9nUPU/view?usp=sharing" target="_blank">Web Development & Designing</a>
+			<a class="btn btn-secondary" href="https://drive.google.com/file/d/1SFIwHM7SoCFfKweZaXAf3Rm_jfH2r2kU/view?usp=sharing" target="_blank">TCS iON & Designing</a>
+			<a class="btn" href="https://drive.google.com/file/d/1u7XrnQPOk4S9W24n2lH-GnHfTDD25Myz/view?usp=sharing" target="_blank">Android App Development</a>
+			<a class="btn btn-secondary" href="https://drive.google.com/file/d/10YTvu7v_lWl0tVFwX-tTKOiC68w3Cn33/view?usp=sharing" target="_blank">Database Management System</a>
+			<a class="btn" href="https://drive.google.com/file/d/1peemsEJFxm-Nqvlx7dOz03dekdxiCtiD/view?usp=sharing" target="_blank">Intermediate Coding Course</a>
+			<a class="btn btn-secondary" href="https://www.linkedin.com/in/moiz-ahmad-shaikh-00a02820b/details/skills/" target="_blank">Linkedin Badges</a>
+			<a class="btn" href="https://drive.google.com/file/d/1UF3DuXDvhdFIs6-XgCnH3oUrHGq6fjpG/view?usp=sharing" target="_blank">Communication Skills</a>
+			<a class="btn btn-secondary" href="https://drive.google.com/file/d/1A1rvaUiitalA1qwB3cCHKarMnaaPxngM/view?usp=sharing" target="_blank">Bootcamp for Idea
+                Generation</a>
+			<a class="btn" href="https://drive.google.com/file/d/1p6nPPAOt7U5Fy-Qa0ea5ouKVJn2eEFQi/view?usp=sharing" target="_blank">Python Programming</a>
+		</div>
+	</div>
+</body>
+</html>
